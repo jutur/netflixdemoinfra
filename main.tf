@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "one" {
   count                  = 4
-  ami                    = "ami-0ecb62995f68bb549"
+  ami                    = "ami-059afa9e3a9c7af0c"
   instance_type          = "t2.micro"
   key_name               = "jutur123"
   vpc_security_group_ids = ["sg-020987ed241447a42"]
