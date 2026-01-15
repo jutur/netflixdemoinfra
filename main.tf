@@ -14,5 +14,5 @@ resource "aws_instance" "one" {
 }
 
 variable "instance_names" {
-  default = ["Ansible", "tomcat-1", "tomcat-2"]
+  default = ["Ansible-1", "tomcat-2", "tomcat-3"]
 }
