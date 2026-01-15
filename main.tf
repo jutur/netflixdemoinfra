@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  count                  = 4
-  ami                    = "ami-059afa9e3a9c7af0c"
-  instance_type          = "t2.micro"
+  count                  = 3
+  ami                    = "ami-07ff62358b87c7116"
+  instance_type          = "t2.nano"
   key_name               = "jutur123"
   vpc_security_group_ids = ["sg-020987ed241447a42"]
   tags = {
@@ -14,5 +14,5 @@ resource "aws_instance" "one" {
 }
 
 variable "instance_names" {
-  default = ["jenkins", "tomcat-1", "tomcat-2", "Monitoring server"]
+  default = ["Ansible", "tomcat-1", "tomcat-2"]
 }
