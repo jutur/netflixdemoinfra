@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  count                  = 3
+  count                  = 0
   ami                    = "ami-07ff62358b87c7116"
   instance_type          = "t2.nano"
   key_name               = "jutur123"
